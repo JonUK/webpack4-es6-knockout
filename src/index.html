@@ -7,15 +7,29 @@
 </head>
 <body>
 
-<h1>Main</h1>
+<div id="app" class="component-highlight">
 
-<img src="./images/ko.png" alt="KnockoutJS Logo">
+    <h1>App root</h1>
 
-<div id="app">
+    <p>
+        <img src="./images/webpack-logo.png" alt="Webpack Logo">
+        <img src="./images/es6-logo.png" alt="ES6 Logo">
+        <img src="./images/knockoutjs-logo.png" alt="KnockoutJS Logo">
+    </p>
 
-    Hello <span data-bind="text: firstName"></span> <span data-bind="text: lastName"></span>
+    <form action="/action_page.php">
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" data-bind="textinput: firstName"><br>
 
-    <inv-person params="firstName: firstName, lastName: lastName"></inv-person>
+        <label for="firstName">Last name</label>
+        <input type="text" id="lastName" data-bind="textinput: lastName"><br>
+    </form>
+
+    <p>
+        Hello <span data-bind="text: firstName"></span> <span data-bind="text: lastName"></span>
+    </p>
+
+    <inv-person params="firstName: firstName, lastName: lastName" class="component-highlight"></inv-person>
 
 </div>
 

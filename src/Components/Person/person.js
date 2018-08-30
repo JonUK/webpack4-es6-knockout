@@ -6,6 +6,8 @@ export class PersonViewModel {
 
   constructor(params) {
 
+    console.log('Hello from PersonViewModel');
+
     this.firstName = params.firstName;
     this.lastName = params.lastName;
     this.fullName = ko.computed(() => {
