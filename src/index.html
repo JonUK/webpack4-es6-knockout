@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KO ES6</title>
+</head>
+<body>
+
+<h1>Main</h1>
+
+<img src="./images/ko.png" alt="KnockoutJS Logo">
+
+<div id="app">
+
+    Hello <span data-bind="text: firstName"></span> <span data-bind="text: lastName"></span>
+
+    <inv-person params="firstName: firstName, lastName: lastName"></inv-person>
+
+</div>
+
+<script src="main-bundle.js"></script>
+
+</body>
+</html>
