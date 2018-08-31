@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    main: './src/main.js'
+    main: ['@babel/polyfill', './src/main.js']
   },
   output: {
     filename: '[name]-bundle.js',
@@ -17,17 +17,24 @@ module.exports = {
   module: {
     rules: [
       {
-        test: path.resolve('./src/index.html'), // Main index page
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader" // Transpiles ES6 down to ES5
+        }
+      },
+      {
+        test: /\.html$/, // All component views
+        exclude: path.resolve('./src/index.html'), // Exclude the main index page
+        use: ['html-loader'] // Adds the component views to the bundle
+      },
+      {
+        test: path.resolve('./src/index.html'), // Match main index page and copy to dist folder
         use: [
           { loader: 'file-loader', options: { name: '[name].html' } }, // Names the file output
           { loader: "extract-loader" }, // Tells webpack that this should be a separate file and not in the bundle
           { loader: "html-loader", options: { attrs: ['img:src'] } } // Linting
         ]
-      },
-      {
-        test: /\.html$/, // All component views
-        exclude: path.resolve('./src/index.html'), // Exclude the main index page
-        use: ['html-loader']
       },
       {
         test: /\.css$/,

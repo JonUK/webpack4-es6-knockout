@@ -1,6 +1,6 @@
 import ko from 'knockout';
 
-import PersonComponent from './Person/person';
+import PersonComponent from './person/person';
 
 class ComponentRegistration {
 

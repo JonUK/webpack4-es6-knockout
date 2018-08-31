@@ -15,8 +15,8 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 2. **Done -** Use ES6 modules for Knockout components & view models
 3. **Done -** Use ES6 classes for Knockout view models
 4. **Done -** Add Knockout component HTML templates to Webpack bundle
-5. **Not Done -** Use Babel to transpile ES6 to ES5
-6. **Not Done -** Use Babel polyfill to support Promises and newer methods on native prototypes
+5. **Done -** Use Babel to transpile ES6 to ES5
+6. **Done -** Use Babel polyfill to support Promises and newer methods on native prototypes
 7. **Not Done -** Use Webpack to compile multiple SASS files into a single CSS file
 8. **Not Done -** Use "scoped" component SASS files that only affect the elements in the component HTML templates
 9. **Not Done -** Create a vendor bundle using Webpack. The bundle should contain just third-party scripts and the bundle can be reused by several pages alongside a page specific code bundle.

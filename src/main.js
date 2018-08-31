@@ -1,8 +1,9 @@
+require("@babel/polyfill");
 require('./index.html');
 require('./main.css');
 
 import ko from 'knockout';
-import ComponentRegistration from './Components/component-registration';
+import ComponentRegistration from './components/component-registration';
 
 class AppViewModel {
   constructor() {
@@ -13,6 +14,18 @@ class AppViewModel {
 
     this.firstName = ko.observable('Mike');
     this.lastName = ko.observable('Smith');
+
+    // Very basic Promise example to check Promises have been polyfilled
+    function getPromiseThatResolvesIn1Second() {
+      return new Promise(resolve => {
+        setTimeout(resolve, 1000);
+      })
+    }
+
+    getPromiseThatResolvesIn1Second()
+      .then(() => {
+        this.lastName('Jones');
+      })
   }
 }
 
