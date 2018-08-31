@@ -17,14 +17,15 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 4. **Done -** Add Knockout component HTML templates to Webpack bundle
 5. **Done -** Use Babel to transpile ES6 to ES5
 6. **Done -** Use Babel polyfill to support Promises and newer methods on native prototypes
-7. **Not Done -** Use Webpack to compile multiple SASS files into a single CSS file
-8. **Not Done -** Use "scoped" component SASS files that only affect the elements in the component HTML templates
-9. **Not Done -** Create a vendor bundle using Webpack. The bundle should contain just third-party scripts and the bundle can be reused by several pages alongside a page specific code bundle.
-10. **Not Done -** Support handlebars syntax `{{title}}` for setting HTML text and HTML element values ([Knockout.Punches](http://mbest.github.io/knockout.punches/))
-11. **Not Done -** Write unit tests against Knockout view models using Jasmine and potentially a test runner like Karama
-12. **Not Done -** Add Bootstrap 3 / 4 SASS files then compile to CSS and bundle into a single CSS file
-13. **Not Done -** Create an npm package for a reusable component with zero dependencies and use this external component
-14. **Not Done -** Review the best way to support HTML templates is different languages (KO binding vs compiled templates in multiple languages)
+7. **Done -** Use Webpack to compile multiple SASS files into a single CSS file and generate a sourcemap
+8. **Not Done -** Use a SASS / CSS autoprefixer to automatically add vendor prefixes
+9. **Not Done -** Use "scoped" component SASS files that only affect the elements in the component HTML templates
+10. **Not Done -** Create a vendor bundle using Webpack. The bundle should contain just third-party scripts and the bundle can be reused by several pages alongside a page specific code bundle.
+11. **Not Done -** Support handlebars syntax `{{title}}` for setting HTML text and HTML element values ([Knockout.Punches](http://mbest.github.io/knockout.punches/))
+12. **Not Done -** Write unit tests against Knockout view models using Jasmine and potentially a test runner like Karama
+13. **Not Done -** Add Bootstrap 3 / 4 SASS files then compile to CSS and bundle into a single CSS file
+14. **Not Done -** Create an npm package for a reusable component with zero dependencies and use this external component
+15. **Not Done -** Review the best way to support HTML templates is different languages (KO binding vs compiled templates in multiple languages)
 
 
 ## Possible things to look at implementing

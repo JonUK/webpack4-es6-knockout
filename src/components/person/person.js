@@ -1,3 +1,5 @@
+import './person.scss';
+
 import ko from 'knockout';
 import personTemplate from './person.html';
 

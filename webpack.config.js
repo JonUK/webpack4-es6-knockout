@@ -1,5 +1,6 @@
 // Webpack v4
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
@@ -14,6 +15,7 @@ module.exports = {
     contentBase: "dist",
     overlay: true // Show errors in overlay on the website
   },
+  devtool: 'source-map', // Generate sourcemaps
   module: {
     rules: [
       {
@@ -37,10 +39,12 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
-          { loader: 'style-loader' }, // Injects the CSS into the HTML
-          { loader: 'css-loader' }
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: "css-loader", options: {sourceMap: true} }, // Translates CSS into CommonJS
+          { loader: 'postcss-loader', options: {sourceMap: true} }, // Add vendor prefixes to CSS
+          { loader: "sass-loader", options: {sourceMap: true} } // compiles Sass to CSS
         ]
       },
       {
@@ -48,7 +52,12 @@ module.exports = {
         use: [
           { loader: 'file-loader', options: { name: 'images/[name].[ext]' } }, // Names the file output
         ]
-      },
+      }
     ]
-  }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    })
+  ]
 };
