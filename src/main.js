@@ -1,6 +1,6 @@
-require("@babel/polyfill");
-require('./index.html');
-require('./main.css');
+import '@babel/polyfill';
+import './index.html';
+import './main.scss';
 
 import ko from 'knockout';
 import ComponentRegistration from './components/component-registration';
