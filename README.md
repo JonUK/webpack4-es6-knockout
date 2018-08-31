@@ -4,7 +4,8 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 ## Steps to run website
 1. Run `npm install`
 2. Run `npm run start` to start the Webpack Dev Server
-3. Browse to `index.html`
+3. Browse to [http://localhost:8080/](http://localhost:8080/)
+
 
 ## Steps to build production assets
 1. Run `npm run build`
@@ -22,13 +23,15 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 10. **Not Done -** Support handlebars syntax `{{title}}` for setting HTML text and HTML element values ([Knockout.Punches](http://mbest.github.io/knockout.punches/))
 11. **Not Done -** Write unit tests against Knockout view models using Jasmine and potentially a test runner like Karama
 12. **Not Done -** Add Bootstrap 3 / 4 SASS files then compile to CSS and bundle into a single CSS file
+13. **Not Done -** Create an npm package for a reusable component with zero dependencies and use this external component
+14. **Not Done -** Review the best way to support HTML templates is different languages (KO binding vs compiled templates in multiple languages)
 
 
 ## Possible things to look at implementing
 1. **Not Done -** Use a fetch polyfill and create example where fetch is used to get data from the server
 2. **Not Done -** Create a service worker and cache bundles. Ensure a suitable version number / hash is used to allow bundle to be updated.
 3. **Not Done -** Review modern but still backwards compatible approach to routing. Move on from hash based routing?
-3. **Not Done -** State store that manages and controls state changes for complicated a state scenario
+4. **Not Done -** State store that manages and controls state changes for complicated a state scenario
 
 
 ## Reference articles
