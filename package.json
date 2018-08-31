@@ -1,5 +1,5 @@
 {
-  "name": "ko-es6",
+  "name": "webpack4-es6-knockout",
   "version": "1.0.0",
   "description": "Project to review the best use of Webpack 4 with ES6 and Knockout.",
   "author": "",
@@ -7,12 +7,17 @@
   "homepage": "https://github.com/JonUK/webpack4-es6-knockout",
   "scripts": {
     "start": "webpack-dev-server --mode development",
+    "start-prod": "webpack-dev-server --mode production",
     "build": "webpack --mode production"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "knockout": "^3.4.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
     "css-loader": "^1.0.0",
     "extract-loader": "^2.0.1",
     "file-loader": "^2.0.0",
