@@ -1,0 +1,32 @@
+body {
+  margin: 12px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  @media screen and (min-width: 880px) {
+    margin: 12px auto;
+    width: 740px;
+  }
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0 16px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}

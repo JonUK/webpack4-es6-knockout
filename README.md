@@ -25,7 +25,7 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 12. **Not Done -** Write unit tests against Knockout view models using Jasmine and potentially a test runner like Karama
 13. **Not Done -** Add Bootstrap 3 / 4 SASS files then compile to CSS and bundle into a single CSS file
 14. **Not Done -** Create an npm package for a reusable component with zero dependencies and use this external component
-15. **Not Done -** Review the best way to support HTML templates is different languages (KO binding vs compiled templates in multiple languages)
+15. **Not Done -** Review the best way to support HTML templates in different languages (KO binding vs compiled templates in multiple languages)
 
 
 ## Possible things to look at implementing

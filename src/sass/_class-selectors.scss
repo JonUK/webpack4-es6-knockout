@@ -1,0 +1,8 @@
+.component-highlight {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px 10px 20px;
+  border: 2px dashed #999;
+  border-radius: 10px;
+  user-select: none; // This will have vendor prefixes automatically added to it in the complied CSS
+}
