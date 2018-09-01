@@ -1,0 +1,27 @@
+<div class="home">
+
+    <h1>Home page</h1>
+
+    <p>
+        <img src="../../images/webpack-logo.png" alt="Webpack Logo">
+        <img src="../../images/es6-logo.png" alt="ES6 Logo">
+        <img src="../../images/knockoutjs-logo.png" alt="KnockoutJS Logo">
+    </p>
+
+    <form>
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" textInput="{{firstName}}"><br>
+
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" textInput="{{lastName}}"><br>
+        <pre><code>&lt;input type="text" id="lastName" textInput="{&#8203;{lastName}&#8203;}"&gt</code></pre>
+    </form>
+
+    <p>Hello {{firstName}} {{lastName}}</p>
+
+    <inv-person params="firstName: firstName, lastName: lastName" class="component-highlight"></inv-person>
+
+    <file-list params="files: files" class="component-highlight"></file-list>
+
+</div>
+

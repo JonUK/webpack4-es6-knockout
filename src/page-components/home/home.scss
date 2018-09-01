@@ -1,0 +1,9 @@
+// Apply a parent class that all other classes are nested under. This ensures
+// component classes won't affect elements outside of this component.
+.home {
+
+  h1 {
+    color: #999;
+  }
+
+}
