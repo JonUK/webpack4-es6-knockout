@@ -23,10 +23,11 @@
 
     <form>
         <label for="firstName">First name</label>
-        <input type="text" id="firstName" value="{{firstName}}"><br>
+        <input type="text" id="firstName" textInput="{{firstName}}"><br>
 
         <label for="lastName">Last name</label>
-        <input type="text" id="lastName" value="{{lastName}}"><br>
+        <input type="text" id="lastName" textInput="{{lastName}}"><br>
+        <pre><code>&lt;input type="text" id="lastName" textInput="{&#8203;{lastName}&#8203;}"&gt</code></pre>
     </form>
 
     <p>Hello {{firstName}} {{lastName}}</p>
