@@ -1,0 +1,10 @@
+// Apply a parent class that all other classes are nested under. This ensures
+// component classes won't affect elements outside of this component.
+.file-list {
+
+  .lead {
+    margin-top: -3px;
+    font-size: 1.2em;
+  }
+
+}

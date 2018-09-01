@@ -1,0 +1,23 @@
+<div class="file-list">
+
+    <h1>File list component</h1>
+
+    <p class="lead">
+        A custom binding has been used to show the file size.
+        A separate model object has been used for each file in the list.
+    </p>
+
+    <ul>
+        {{#foreach: files}}
+        <li>
+            {{fileName}} -
+
+            <!-- TODO: Review this and see in Knockout Punches supports a handlebars syntax approach -->
+            <span data-bind="fileSize: fileSize"></span>
+
+        </li>
+        {{/foreach}}
+    </ul>
+
+</div>
+
