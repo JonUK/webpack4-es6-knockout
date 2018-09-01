@@ -3,15 +3,34 @@
     <h1>Person component</h1>
 
     <!-- Old binding syntax -->
-    <p>First name: <span data-bind="text: firstName"></span></p>
-    <p>Last name: <span data-bind="text: lastName"></span></p>
-    <p>Full name: <span data-bind="text: fullName"></span></p>
 
-    <!--<h2>Preferred binding syntax</h2>-->
+    <h2>
+        Using "handlebar" syntax with
+        <a href="https://mbest.github.io/knockout.punches/" target="_blank">knockout-punches</a>
+    </h2>
+    <pre><code>First name: {&#8203;{firstName}&#8203;}</code></pre>
 
-    <!--<p>First name {{firstName}}</p>-->
-    <!--<p>Last name {{lastName}}</p>-->
-    <!--<p>Full name {{fullName}}</p>-->
+    <ul>
+        <li>First name: {{firstName}}</li>
+        <li>Last name: {{lastName}}</li>
+        <li>Full name: {{fullName}}</li>
+    </ul>
+
+
+    <h2>Using old "data-bind" syntax</h2>
+    <pre><code>First name: &lt;span data-bind="text: firstName"&gt;&lt;/span&gt;</code></pre>
+
+    <ul>
+        <li>
+            First name: <span data-bind="text: firstName"></span>
+        </li>
+        <li>
+            Last name: <span data-bind="text: lastName"></span>
+        </li>
+        <li>
+            Full name: <span data-bind="text: fullName"></span>
+        </li>
+    </ul>
 
 </div>
 

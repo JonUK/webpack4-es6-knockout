@@ -23,15 +23,13 @@
 
     <form>
         <label for="firstName">First name</label>
-        <input type="text" id="firstName" data-bind="textinput: firstName"><br>
+        <input type="text" id="firstName" value="{{firstName}}"><br>
 
         <label for="lastName">Last name</label>
-        <input type="text" id="lastName" data-bind="textinput: lastName"><br>
+        <input type="text" id="lastName" value="{{lastName}}"><br>
     </form>
 
-    <p>
-        Hello <span data-bind="text: firstName"></span> <span data-bind="text: lastName"></span>
-    </p>
+    <p>Hello {{firstName}} {{lastName}}</p>
 
     <inv-person params="firstName: firstName, lastName: lastName" class="component-highlight"></inv-person>
 

@@ -1,5 +1,6 @@
 import '@babel/polyfill';
 import './index.html';
+import 'knockout-punches';
 
 import ko from 'knockout';
 import ComponentRegistration from './components/component-registration';
@@ -28,4 +29,5 @@ class AppViewModel {
   }
 }
 
+ko.punches.enableAll();
 ko.applyBindings(new AppViewModel(), document.getElementById('app'));
