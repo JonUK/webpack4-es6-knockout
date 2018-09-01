@@ -18,7 +18,7 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 5. **Done -** Use Babel to transpile ES6 to ES5
 6. **Done -** Use Babel polyfill to support Promises and newer methods on native prototypes
 7. **Done -** Use Webpack to compile multiple SASS files into a single CSS file and generate a sourcemap
-8. **Not Done -** Use a SASS / CSS autoprefixer to automatically add vendor prefixes
+8. **Done -** Use a SASS / CSS autoprefixer to automatically add vendor prefixes
 9. **Not Done -** Use "scoped" component SASS files that only affect the elements in the component HTML templates
 10. **Not Done -** Create a vendor bundle using Webpack. The bundle should contain just third-party scripts and the bundle can be reused by several pages alongside a page specific code bundle.
 11. **Not Done -** Support handlebars syntax `{{title}}` for setting HTML text and HTML element values ([Knockout.Punches](http://mbest.github.io/knockout.punches/))
