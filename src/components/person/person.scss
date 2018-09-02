@@ -3,18 +3,14 @@
 .person {
 
   h1 {
-    // TODO: Resolve issue where class ".home h1" is actually being used
+    // TODO: Resolve issue where class ".home h1" is actually being used and setting the colour
+    // There is an issue with specificity and the order of the styles in the CSS. Use BEM?
     color: #3333FF;
+    margin-bottom: 0;
   }
 
   h2 {
     margin: 3px 0;
-    font-size: 1.2em;
+    font-size: 1.15em;
   }
-
-  .lead {
-    margin-top: -3px;
-    font-size: 1.2em;
-  }
-
 }

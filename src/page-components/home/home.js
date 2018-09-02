@@ -20,21 +20,16 @@ export class HomeViewModel {
       new FileModel('WebStorm-2018.2.dmg', 232382597)
     ];
 
-    // Very basic Promise example to check Promises have been polyfilled
-    function getPromiseThatResolvesIn1Second() {
-      return new Promise(resolve => {
-        setTimeout(resolve, 1000);
-      })
-    }
-
-    getPromiseThatResolvesIn1Second()
-      .then(() => {
-        this.lastName('Jones');
-      })
   }
 
+  dispose() {
+    // This runs when the component is torn down. Put here any logic necessary to clean up,
+    // for example cancelling setTimeouts or disposing Knockout subscriptions.
+  }
 }
 
 // The default export returns the component details object to register with KO
 export default { viewModel: HomeViewModel, template: template };
 
+// TODO: Review if components should just be registered here with KO directly
+//ko.components.register({viewModel: HomeViewModel, template: template})

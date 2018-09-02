@@ -1,0 +1,44 @@
+
+// Bootstrap 4 core styles and Bootstrap 4 overrides.
+// NOTE: No new classes should be added in "bootstrap-overrides". Only override existing Bootstrap classes.
+
+// Bootstrap core
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+//@import "images";
+//@import "code";
+@import "../../node_modules/bootstrap/scss/grid";
+//@import "tables";
+@import "../../node_modules/bootstrap/scss/forms";
+//@import "buttons";
+//@import "transitions";
+//@import "dropdown";
+//@import "button-group";
+//@import "input-group";
+//@import "custom-forms";
+//@import "nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+//@import "card";
+//@import "breadcrumb";
+//@import "pagination";
+//@import "badge";
+//@import "jumbotron";
+//@import "alert";
+//@import "progress";
+//@import "media";
+//@import "list-group";
+//@import "close";
+//@import "modal";
+//@import "tooltip";
+//@import "popover";
+//@import "carousel";
+@import "../../node_modules/bootstrap/scss/utilities";
+//@import "print";
+
+
+// Bootstrap overrides
+@import "bootstrap-overrides/reboot";

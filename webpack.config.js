@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     app: './src/app.js',
+    bootstrap: './src/sass/bootstrap.scss', // Bundle for Bootstrap core and override SASS files
     site: './src/sass/site.scss' // Bundle for the site level SASS files
   },
   output: {
@@ -27,7 +28,7 @@ module.exports = {
         }
       },
       {
-        test: /\.html$/, // All component views
+        test: /\.html$/, // All component templates / views
         exclude: path.resolve('./src/index.html'), // Exclude the main index page
         use: ['html-loader'] // Adds the component views to the bundle
       },
@@ -42,10 +43,10 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
+          { loader: MiniCssExtractPlugin.loader }, // Outputs CSS to file
           { loader: "css-loader", options: {sourceMap: true} }, // Translates CSS into CommonJS
-          { loader: 'postcss-loader', options: {sourceMap: true} }, // Add vendor prefixes to CSS
-          { loader: "sass-loader", options: {sourceMap: true} } // compiles Sass to CSS
+          { loader: 'postcss-loader', options: {sourceMap: true} }, // Adds vendor prefixes to CSS
+          { loader: "sass-loader", options: {sourceMap: true} } // compiles SASS to CSS
         ]
       },
       {

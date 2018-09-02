@@ -1,21 +1,27 @@
 <div class="home">
 
-    <h1>Home page</h1>
+    <h1>Home page component</h1>
 
-    <p>
+    <p class="text-center">
         <img src="../../images/webpack-logo.png" alt="Webpack Logo">
         <img src="../../images/es6-logo.png" alt="ES6 Logo">
         <img src="../../images/knockoutjs-logo.png" alt="KnockoutJS Logo">
     </p>
 
     <form>
-        <label for="firstName">First name</label>
-        <input type="text" id="firstName" textInput="{{firstName}}"><br>
-
-        <label for="lastName">Last name</label>
-        <input type="text" id="lastName" textInput="{{lastName}}"><br>
-        <pre><code>&lt;input type="text" id="lastName" textInput="{&#8203;{lastName}&#8203;}"&gt</code></pre>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" textInput="{{firstName}}">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" textInput="{{lastName}}">
+            </div>
+        </div>
     </form>
+
+    <pre><code>&lt;input type="text" id="firstName" textInput="{&#8203;{firstName}&#8203;}"&gt</code></pre>
 
     <p>Hello {{firstName}} {{lastName}}</p>
 
