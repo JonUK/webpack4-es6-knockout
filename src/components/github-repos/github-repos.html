@@ -1,0 +1,25 @@
+<div class="github-repos">
+
+    <h1>GitHub repos component - {{username}}</h1>
+
+    <p class="lead">
+        The repos are retrieved via a fetch request to the GitHub REST API
+        <a href="https://developer.github.com/v3/repos/">https://developer.github.com/v3/repos/</a>
+    </p>
+
+    <ul>
+        {{#foreach: repos}}
+        <li>
+            <strong>{{name}}</strong><br />
+
+            {{#if description}}
+                {{description}}<br />
+            {{/if}}
+
+            <a href="{{url}}" target="_blank">{{url}}</a>
+        </li>
+        {{/foreach}}
+    </ul>
+
+</div>
+

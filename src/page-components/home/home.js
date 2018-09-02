@@ -14,6 +14,8 @@ export class HomeViewModel {
     this.firstName = ko.observable('Mike');
     this.lastName = ko.observable('Smith');
 
+    this.githubUsername = 'JonUK';
+
     this.files = [
       new FileModel('VSCode-darwin-stable.zip', 76845743),
       new FileModel('atom-mac.zip', 146559757),
