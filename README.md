@@ -27,7 +27,7 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 14. **Not Done -** Ensure Boostrap 4 variables can be used in our own CSS files (useful for media queries, colours etc)
 15. **Not Done -** Create an npm package for a reusable component with zero dependencies and use this external component
 16. **Not Done -** Review the best way to support HTML templates in different languages (KO binding vs compiled templates in multiple languages)
-17. **Not Done -** Add a KO click handler to show how to use an ES6 arrow function to have the VM context for this.
+17. **Done -** Add a KO click handler to show how to use an ES6 arrow function to have the VM context for this.
 
 
 

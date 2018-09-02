@@ -1,6 +1,7 @@
 import ko from 'knockout';
 
 // Standard components
+import ClickCounterComponent from './components/click-counter/click-counter';
 import FileListComponent from './components/file-list/file-list';
 import PersonComponent from './components/person/person';
 
@@ -17,6 +18,7 @@ class ComponentRegistration {
   }
 
   static registerStandardComponents() {
+    ko.components.register('click-counter', ClickCounterComponent);
     ko.components.register('file-list', FileListComponent);
     ko.components.register('inv-person', PersonComponent);
   }

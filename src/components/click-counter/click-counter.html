@@ -1,0 +1,14 @@
+<div class="click-counter">
+
+    <h1>Click counter component</h1>
+
+    <button class="btn btn-secondary" data-bind="click: increment">Click me!</button>
+    You have clicked the button {{count}} time(s)<br />
+
+    {{#if count() >= 5}}
+    <strong>There is no prize no matter how many times you click!</strong>
+    {{/if}}
+
+
+</div>
+
