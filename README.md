@@ -20,11 +20,11 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 7. **Done -** Use Webpack to compile multiple SASS files into a single CSS file and generate a sourcemap
 8. **Done -** Use a SASS / CSS autoprefixer to automatically add vendor prefixes
 9. **Not Done -** Use "scoped" component SASS files that only affect the elements in the component HTML templates
-10. **Not Done -** Create a vendor bundle using Webpack. The bundle should contain just third-party scripts and the bundle can be reused by several pages alongside a page specific code bundle.
+10. **Done -** Create a vendor bundle using Webpack. The bundle should contain just third-party scripts (things in node_modules folder) and the bundle can be reused by several pages alongside a page specific code bundle.
 11. **Done -** Support handlebars syntax `{{title}}` for setting HTML text and HTML attribute values ([Knockout.Punches](http://mbest.github.io/knockout.punches/))
 12. **Not Done -** Write unit tests against Knockout view models using Jasmine and potentially a test runner like Karama
 13. **Done -** Add Bootstrap 4 SASS files then compile to CSS and bundle into a single CSS file
-14: **Not Done -** Ensure Boostrap 4 variables can be used in our own CSS files (useful for media queries, colours etc)
+14. **Not Done -** Ensure Boostrap 4 variables can be used in our own CSS files (useful for media queries, colours etc)
 15. **Not Done -** Create an npm package for a reusable component with zero dependencies and use this external component
 16. **Not Done -** Review the best way to support HTML templates in different languages (KO binding vs compiled templates in multiple languages)
 17. **Not Done -** Add a KO click handler to show how to use an ES6 arrow function to have the VM context for this.
@@ -48,3 +48,5 @@ https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-th
 https://github.com/vkrol/knockout-webpack-example
 <br />
 https://github.com/johnligt/Knockout-TypeScript-Webpack-Starter
+<br />
+https://wanago.io/2018/06/04/code-splitting-with-splitchunksplugin-in-webpack-4/

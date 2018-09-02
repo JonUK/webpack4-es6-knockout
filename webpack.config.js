@@ -57,6 +57,18 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    splitChunks: { // Create a separate chunk for vendor scripts (things in node_modules folder)
+      cacheGroups: {
+        vendor: {
+          test: /node_modules/,
+          chunks: 'initial',
+          name: 'vendor',
+          enforce: true
+        }
+      }
+    }
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
