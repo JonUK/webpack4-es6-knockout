@@ -1,3 +1,11 @@
 
 // Site-wide SASS files. Component specific SASS files sit in the same folder as the component.
+
+// Import Bootstrap 4 functions, variables and breakpoints mixins so they can be used in the site SASS files
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints"; // https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints
+
+
+// Site SASS files
 @import "site/class-selectors";

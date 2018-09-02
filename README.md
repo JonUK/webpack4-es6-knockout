@@ -24,7 +24,8 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 11. **Done -** Support handlebars syntax `{{title}}` for setting HTML text and HTML attribute values ([Knockout.Punches](http://mbest.github.io/knockout.punches/))
 12. **Not Done -** Write unit tests against Knockout view models using Jasmine and potentially a test runner like Karama
 13. **Done -** Add Bootstrap 4 SASS files then compile to CSS and bundle into a single CSS file
-14. **Not Done -** Ensure Boostrap 4 variables can be used in our own CSS files (useful for media queries, colours etc)
+13. **Not Done -** Use Bootstrap 4 with icon fonts e.g. ([Glyphicons](http://glyphicons.com/)), ([Iconic](https://useiconic.com/open/)) or ([Octicons](https://octicons.github.com/))
+14. **Done -** Ensure Boostrap 4 variables can be used in our own CSS files (useful for media queries, colours etc)
 15. **Not Done -** Create an npm package for a reusable component with zero dependencies and use this external component
 16. **Not Done -** Review the best way to support HTML templates in different languages (KO binding vs compiled templates in multiple languages)
 17. **Done -** Add a KO click handler to show how to use an ES6 arrow function to have the VM context for this.

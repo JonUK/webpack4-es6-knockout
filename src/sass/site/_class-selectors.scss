@@ -14,3 +14,12 @@
   border: 2px dashed #999;
   border-radius: 10px;
 }
+
+.bootstrap-variable-example {
+
+  color: $blue;
+
+  @include media-breakpoint-up(sm) { // Compiles to @media (min-width: 576px) {}
+    colour: $red;
+  }
+}
