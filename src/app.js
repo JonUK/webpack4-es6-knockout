@@ -1,6 +1,6 @@
 import '@babel/polyfill'; // Promise polyfill and others
 import 'unfetch/polyfill'; // Fetch polyfill
-import 'knockout-punches';
+import 'knockout-punches'; // Support for handlebars syntax
 import './index.html';
 
 import ko from 'knockout';
