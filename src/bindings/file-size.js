@@ -4,7 +4,7 @@ export default {
 
   update: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
 
-    var text = getFormattedFileSize(ko.utils.unwrapObservable(valueAccessor()));
+    const text = getFormattedFileSize(ko.utils.unwrapObservable(valueAccessor()));
 
     ko.bindingHandlers.text.update(
       element,

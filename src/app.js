@@ -1,6 +1,7 @@
-import '@babel/polyfill';
-import './index.html';
+import '@babel/polyfill'; // Promise polyfill and others
+import 'unfetch/polyfill'; // Fetch polyfill
 import 'knockout-punches';
+import './index.html';
 
 import ko from 'knockout';
 import ComponentRegistration from './registration-components';

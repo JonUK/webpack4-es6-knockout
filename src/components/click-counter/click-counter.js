@@ -7,7 +7,6 @@ import template from './click-counter.html';
 export class ClickCounterViewModel {
 
   constructor() {
-
     console.log('Hello from ClickCounterViewModel');
 
     this.count = ko.observable(0);
@@ -15,7 +14,6 @@ export class ClickCounterViewModel {
     this.increment = () => {
       this.count(this.count() + 1);
     }
-
   }
 
   dispose() {

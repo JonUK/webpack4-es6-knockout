@@ -6,7 +6,6 @@ import template from './file-list.html';
 export class FileListViewModel {
 
   constructor(params) {
-
     console.log('Hello from FileListViewModel');
 
     this.files = params.files;
