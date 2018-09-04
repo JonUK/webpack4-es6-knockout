@@ -1,37 +1,32 @@
-<div class="home">
+<h1 class="home__title">Home page component</h1>
 
-    <h1>Home page component</h1>
+<p class="text-center">
+    <img src="../../images/webpack-logo.png" alt="Webpack Logo">
+    <img src="../../images/es6-logo.png" alt="ES6 Logo">
+    <img src="../../images/knockoutjs-logo.png" alt="KnockoutJS Logo">
+</p>
 
-    <p class="text-center">
-        <img src="../../images/webpack-logo.png" alt="Webpack Logo">
-        <img src="../../images/es6-logo.png" alt="ES6 Logo">
-        <img src="../../images/knockoutjs-logo.png" alt="KnockoutJS Logo">
-    </p>
-
-    <form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" textInput="{{firstName}}">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" textInput="{{lastName}}">
-            </div>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" id="firstName" textInput="{{firstName}}">
         </div>
-    </form>
+        <div class="form-group col-md-6">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" textInput="{{lastName}}">
+        </div>
+    </div>
+</form>
 
-    <pre><code>&lt;input type="text" id="firstName" textInput="{&#8203;{firstName}&#8203;}"&gt</code></pre>
+<pre><code>&lt;input type="text" id="firstName" textInput="{&#8203;{firstName}&#8203;}"&gt</code></pre>
 
-    <p>Hello {{firstName}} {{lastName}}</p>
+<p>Hello {{firstName}} {{lastName}}</p>
 
-    <inv-person params="firstName: firstName, lastName: lastName" class="component-highlight"></inv-person>
+<inv-person params="firstName: firstName, lastName: lastName" class="component-highlight"></inv-person>
 
-    <file-list params="files: files" class="component-highlight"></file-list>
+<file-list params="files: files" class="component-highlight"></file-list>
 
-    <click-counter class="component-highlight"></click-counter>
+<click-counter class="component-highlight"></click-counter>
 
-    <github-repos params="username: githubUsername" class="component-highlight"></github-repos>
-
-</div>
-
+<github-repos params="username: githubUsername" class="component-highlight"></github-repos>

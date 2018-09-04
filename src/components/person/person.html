@@ -1,13 +1,11 @@
-<div class="person">
+<h1 class="person__main-heading">Person component</h1>
+<p class="lead">
+    This component has it's own SASS file.
+    The name changes after 2 seconds via the use of a Promise.
+</p>
 
-    <h1>Person component</h1>
-    <p class="lead">
-        This component has it's own SASS file.
-        The name changes after 1 second via the use of a Promise.
-    </p>
-
-
-    <h2>
+<section>
+    <h2 class="person__section-heading">
         Using "handlebar" syntax with
         <a href="https://mbest.github.io/knockout.punches/" target="_blank">knockout-punches</a>
     </h2>
@@ -18,9 +16,10 @@
         <li>Last name: {{lastName}}</li>
         <li>Full name: {{fullName}}</li>
     </ul>
+</section>
 
-
-    <h2>Using old "data-bind" syntax</h2>
+<section>
+    <h2 class="person__section-heading">Using old "data-bind" syntax</h2>
     <pre><code>First name: &lt;span data-bind="text: firstName"&gt;&lt;/span&gt;</code></pre>
 
     <ul>
@@ -34,6 +33,6 @@
             Full name: <span data-bind="text: fullName"></span>
         </li>
     </ul>
+</section>
 
-</div>
 

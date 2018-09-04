@@ -17,7 +17,7 @@
 
 .bootstrap-variable-example {
 
-  color: $blue;
+  color: $blue; // Example of using a Bootstrap 4 variable in site level SASS
 
   @include media-breakpoint-up(sm) { // Compiles to @media (min-width: 576px) {}
     color: $red;
