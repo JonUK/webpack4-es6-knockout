@@ -39,6 +39,7 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 3. **Not Done -** State store that manages and controls state changes for complicated a state scenario
 4. **Not Done -** Review if "html-webpack-plugin" should be used to generate the HTML files to serve up the bundles
 5. **Not Done -** Configure Webpack Dev Server for hot module reload (rather than just page reload) when changes made
+6. **Not Done -** Move code to an ASP.Net Core 2.x project and make use of WebpackDevMiddleware 
 
 
 ## Reference articles
@@ -53,3 +54,7 @@ https://github.com/johnligt/Knockout-TypeScript-Webpack-Starter
 https://wanago.io/2018/06/04/code-splitting-with-splitchunksplugin-in-webpack-4/
 <br />
 https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e
+<br />
+https://github.com/webpack-contrib/karma-webpack/issues/350
+
+
