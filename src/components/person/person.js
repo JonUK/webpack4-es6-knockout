@@ -8,8 +8,6 @@ export class PersonViewModel {
 
   constructor(params) {
 
-    console.log('Hello from PersonViewModel');
-
     this.firstName = params.firstName;
     this.lastName = params.lastName;
     this.fullName = ko.pureComputed(() => {
@@ -17,13 +15,13 @@ export class PersonViewModel {
     });
 
     // Very basic Promise example to check Promises have been polyfilled
-    function getPromiseThatResolvesIn1Second() {
+    function getPromiseThatResolvesIn2Seconds() {
       return new Promise(resolve => {
-        setTimeout(resolve, 1000);
+        setTimeout(resolve, 2000);
       })
     }
 
-    getPromiseThatResolvesIn1Second()
+    getPromiseThatResolvesIn2Seconds()
       .then(() => {
         this.firstName('Sarah');
         this.lastName('Jones');

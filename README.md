@@ -19,17 +19,17 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 6. **Done -** Use Babel polyfill to support Promises and newer methods on native prototypes
 7. **Done -** Use Webpack to compile multiple SASS files into a single CSS file and generate a sourcemap
 8. **Done -** Use a SASS / CSS autoprefixer to automatically add vendor prefixes
-9. **Not Done -** Use "scoped" component SASS files that only affect the elements in the component HTML templates
+9. **In Progress -** Use "scoped" component SASS files that only affect the elements in the component HTML templates. Currently using [BEM](http://getbem.com/naming/) naming convention. 
 10. **Done -** Create a vendor bundle using Webpack. The bundle should contain just third-party scripts (things in node_modules folder) and the bundle can be reused by several pages alongside a page specific code bundle.
 11. **Done -** Support handlebars syntax `{{title}}` for setting HTML text and HTML attribute values ([Knockout.Punches](http://mbest.github.io/knockout.punches/))
 12. **Not Done -** Write unit tests against Knockout view models using Jasmine and potentially a test runner like Karama
 13. **Done -** Add Bootstrap 4 SASS files then compile to CSS and bundle into a single CSS file
-13. **Not Done -** Use Bootstrap 4 with icon fonts e.g. ([Glyphicons](http://glyphicons.com/)), ([Iconic](https://useiconic.com/open/)) or ([Octicons](https://octicons.github.com/))
+13. **Not Done -** Use Bootstrap 4 with icon fonts e.g. [Glyphicons](http://glyphicons.com/), [Iconic](https://useiconic.com/open/) or [Octicons](https://octicons.github.com/)
 14. **Done -** Ensure Bootstrap 4 variables can be used in our own CSS files (useful for media queries, colours etc)
 15. **Not Done -** Create an npm package for a reusable component with zero dependencies and use this external component
 16. **Not Done -** Review the best way to support HTML templates in different languages (KO binding vs compiled templates in multiple languages)
 17. **Done -** Add a KO click handler to show how to use an ES6 arrow function to have the VM context for "this".
-18. **Not Done -** Implement modern but still backwards compatible approach to routing. Support data retrieval via Promises before navigation. Review ([knockout-contrib-router](https://github.com/Profiscience/knockout-contrib/tree/master/packages/router)).
+18. **Not Done -** Implement modern but still backwards compatible approach to routing. Support data retrieval via Promises before navigation. Review [knockout-contrib-router](https://github.com/Profiscience/knockout-contrib/tree/master/packages/router).
 19. **Not Done -** ESLint JavaScript.
 
 
@@ -39,6 +39,7 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 3. **Not Done -** State store that manages and controls state changes for complicated a state scenario
 4. **Not Done -** Review if "html-webpack-plugin" should be used to generate the HTML files to serve up the bundles
 5. **Not Done -** Configure Webpack Dev Server for hot module reload (rather than just page reload) when changes made
+6. **Not Done -** Move code to an ASP.Net Core 2.x project and make use of WebpackDevMiddleware 
 
 
 ## Reference articles
@@ -53,3 +54,7 @@ https://github.com/johnligt/Knockout-TypeScript-Webpack-Starter
 https://wanago.io/2018/06/04/code-splitting-with-splitchunksplugin-in-webpack-4/
 <br />
 https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e
+<br />
+https://github.com/webpack-contrib/karma-webpack/issues/350
+
+

@@ -1,16 +1,10 @@
-// Apply a parent class that all other classes are nested under. This ensures
-// component classes won't affect elements outside of this component.
-.person {
+// Use BEM naming convention so class names won't clash with other components
+.person__main-heading {
+  color: #3333FF;
+  margin-bottom: 0;
+}
 
-  h1 {
-    // TODO: Resolve issue where class ".home h1" is actually being used and setting the colour
-    // There is an issue with specificity and the order of the styles in the CSS. Use BEM?
-    color: #3333FF;
-    margin-bottom: 0;
-  }
-
-  h2 {
-    margin: 3px 0;
-    font-size: 1.15em;
-  }
+.person__section-heading {
+  margin: 3px 0;
+  font-size: 1.15em;
 }

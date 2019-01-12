@@ -1,4 +1,5 @@
 import ko from 'knockout';
+import {expect} from 'chai';
 import { PersonViewModel } from './person';
 
 describe('PersonViewModel', () => {
@@ -15,7 +16,7 @@ describe('PersonViewModel', () => {
     const viewModel = new PersonViewModel(params);
 
     // Assert
-    expect(viewModel.fullName).toEqual('Mike Smith');
+    expect(viewModel.fullName()).to.equal('Mike Smith');
   });
 });
 

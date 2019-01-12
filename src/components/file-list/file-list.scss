@@ -1,9 +1,4 @@
-// Apply a parent class that all other classes are nested under. This ensures
-// component classes won't affect elements outside of this component.
-.file-list {
-
-  h1 {
-    margin-bottom: 0;
-  }
-
+// Use BEM naming convention so class names won't clash with other components
+.file-list__title {
+  margin-bottom: 0;
 }

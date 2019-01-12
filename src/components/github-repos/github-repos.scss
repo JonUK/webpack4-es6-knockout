@@ -1,9 +1,4 @@
-// Apply a parent class that all other classes are nested under. This ensures
-// component classes won't affect elements outside of this component.
-.github-repos {
-
-  li {
-    margin-bottom: 15px;
-  }
-
+// Use BEM naming convention so class names won't clash with other components
+.github-repos__item {
+  margin-bottom: 15px;
 }
