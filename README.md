@@ -34,7 +34,7 @@ Project to review the best use of Webpack 4 with ES6 and Knockout.
 
 
 ## Possible things to look at implementing
-1. **In Progress -** Use a fetch polyfill and create example where fetch is used to get data from the server
+1. **Done -** Use a fetch polyfill and create example where fetch is used to get data from the server
 2. **Not Done -** Create a service worker and cache bundles. Ensure a suitable version number / hash is used to allow bundle to be updated.
 3. **Not Done -** State store that manages and controls state changes for complicated a state scenario
 4. **Not Done -** Review if "html-webpack-plugin" should be used to generate the HTML files to serve up the bundles
